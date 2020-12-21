@@ -6,7 +6,6 @@ import sys
 import re
 import base64
 import cv2 # for resize
-import tensorflow as tf
 import json
 #for image processing
 
