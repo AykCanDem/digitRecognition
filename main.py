@@ -11,7 +11,7 @@ import json
 
 import numpy as np
 # for importing the trained keras model
-import keras.models
+
 from keras.models import load_model
 from keras.models import model_from_json
 
