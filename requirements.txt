@@ -68,5 +68,5 @@ pytest-openfiles==0.5.0
 pytest-remotedata==0.3.2
 python-jsonrpc-server==0.3.4
 python-language-server==0.31.9
-tensorflow-gpu==2.2.0
-tensorflow-gpu-estimator==2.2.0
+tensorflow-cpu==2.2.0
+tensorflow-cpu-estimator==2.2.0
