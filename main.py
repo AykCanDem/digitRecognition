@@ -9,7 +9,6 @@ import cv2 # for resize
 import json
 #for image processing
 
-from imageio import imwrite, imsave, imread
 import numpy as np
 # for importing the trained keras model
 import keras.models
