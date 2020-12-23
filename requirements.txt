@@ -19,10 +19,10 @@ isort==4.3.20
 itsdangerous==1.1.0
 Jinja2==2.11.2
 Keras==2.3.1
-Keras-Applications @ file:///tmp/build/80754af9/keras-applications_1594366238411/work
+Keras-Applications==1.0.8
 Keras-Preprocessing==1.1.2
 lazy-object-proxy==1.4.1
-Markdown @ file:///C:/ci/markdown_1605111187600/work
+Markdown==3.3.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
 mkl-fft==1.2.0
@@ -53,4 +53,4 @@ urllib3==1.26.2
 Werkzeug==1.0.1
 wincertstore==0.2
 wrapt==1.11.1
-zipp @ file:///tmp/build/80754af9/zipp_1604001098328/work
+zipp==3.4.0
