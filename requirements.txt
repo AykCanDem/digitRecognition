@@ -25,8 +25,6 @@ lazy-object-proxy==1.4.1
 Markdown==3.3.3
 MarkupSafe==1.1.1
 mccabe==0.6.1
-mkl-fft==1.0.6
-mkl-random==1.0.1.1
 numpy==1.19.4
 oauthlib==3.1.0
 opencv-python==4.4.0.46
@@ -53,5 +51,3 @@ Werkzeug==1.0.1
 wincertstore==0.2
 wrapt==1.11.1
 zipp==3.4.0
-
-
