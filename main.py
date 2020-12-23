@@ -12,8 +12,11 @@ import json
 import numpy as np
 # for importing the trained keras model
 
+"""
 from keras.models import load_model
 from keras.models import model_from_json
+"""
+from tensorflow.keras.models import load_model,model_from_json
 
 
 def init():
@@ -74,6 +77,15 @@ def predict():
     x = cv2.imread('output.png', 0)
     x = np.invert(x)
     x = cv2.resize(x, (28, 28))
+
+    """
+    print('SKI')
+    skix = imread('output.png', as_gray=True)
+    skix = skimage.img_as_ubyte(skix)
+    print(skix[8])
+    skix = resize(skix, (28, 28), preserve_range=True)
+    print(skix[8])
+    """
 
     x = x.reshape(1, 28, 28, 1)
     x = x.astype('float32') / 255
