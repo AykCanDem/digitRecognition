@@ -32,8 +32,10 @@
         <br>
         <button type="button" id="clearButton" onclick="erase()" class="btn btn-danger"> Clear </button>
         <button type="button" class="btn btn-success predictButton"> Predict</button>
-        <h3 id="result"></h3>
-        <h4 id="probabilities"></h4>
+        <div id="output">
+            <h3 id="result"></h3>
+            <h4 id="probabilities"></h4>
+        </div>
     </div>
 
 
@@ -79,7 +81,7 @@
             context.clearRect(0, 0, canvas.width, canvas.height);
             context.fillStyle = "white";
             context.fillRect(0, 0, canvas.width, canvas.height);
-
+            document.getElementById('output').style.visibility ="hidden"
         }
 
         var onPaint = function () {
@@ -95,7 +97,9 @@
             context.stroke();
         };
 
+        function dummy_function(){
 
+        }
 
         $(document).ready(function () {
                 $(".predictButton").click(function () {
@@ -115,9 +119,11 @@
                         probsText += "<b>" + i + "</b>" + ": &ensp; %" + (parseFloat(responseJSON.probabilities[i])*100).toFixed(2) + "<br>"
                     }
                     $('#probabilities').html(' <b><u>Probabilities</u></b> ' + probsText);
+                    document.getElementById('output').style.visibility ="visible";
                 }
-            });
+            }); 
                                 });
+                                
                         });
     </script>
 
