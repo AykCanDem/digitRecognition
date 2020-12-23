@@ -1,4 +1,3 @@
-absl-py @ file:///tmp/build/80754af9/absl-py_1607439979954/work
 astor==0.8.1
 astroid==2.2.5
 cached-property==1.5.2
