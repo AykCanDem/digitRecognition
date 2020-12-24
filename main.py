@@ -7,15 +7,10 @@ import re
 import base64
 import cv2 # for resize
 import json
-#for image processing
 
 import numpy as np
 # for importing the trained keras model
 
-"""
-from keras.models import load_model
-from keras.models import model_from_json
-"""
 from tensorflow.keras.models import load_model,model_from_json
 
 
@@ -75,6 +70,7 @@ def predict():
     # Using cv2.imread() method
     # Using 0 to read image in grayscale mode
     x = cv2.imread('output.png', 0)
+    #invert white to black, black to white
     x = np.invert(x)
     x = cv2.resize(x, (28, 28))
 
@@ -86,8 +82,9 @@ def predict():
     skix = resize(skix, (28, 28), preserve_range=True)
     print(skix[8])
     """
-
+    # reshape the input as model expects
     x = x.reshape(1, 28, 28, 1)
+    # normalize
     x = x.astype('float32') / 255
     out = model.predict(x)
     for index, probability in enumerate(out[0]):
