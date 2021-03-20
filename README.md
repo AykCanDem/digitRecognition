@@ -7,6 +7,7 @@ Aptfile is needed to install some packages for opencv in heroku.
 App link:
 http://digit-recognizer-app.herokuapp.com/
 
-![demo](https://user-images.githubusercontent.com/15074091/111866277-9b4e3800-896c-11eb-95e3-abf953ee4238.gif)
+![demo](https://user-images.githubusercontent.com/15074091/111866314-e23c2d80-896c-11eb-8bfe-11f5eca6b8fc.gif)
+
 
 
