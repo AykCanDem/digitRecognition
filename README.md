@@ -9,7 +9,7 @@ requirments.txt is a bit different than environment.yml since some of the depend
 Aptfile is needed to install some packages for opencv in heroku. 
 
 
-App link:
+**App link:**
 http://digit-recognizer-app.herokuapp.com/
 
 ## DEMO
